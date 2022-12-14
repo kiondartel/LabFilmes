@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes } from "react-router-dom";
+import Movies from "./components/Movies";
+import Search from "./components/Search";
+import App from "./components/AppContent/index";
 import Home from "./home/Home";
 import Global from "./styles/globalstyles";
 
