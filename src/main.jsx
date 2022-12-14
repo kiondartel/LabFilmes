@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Movies from "./components/Movies";
 import Search from "./components/Search";
 import App from "./components/AppContent/index";
@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="search" element={<Search />} />
         </Route>
       </Routes>
+      <Global />
     </BrowserRouter>
-    <Global />
   </React.StrictMode>
 );

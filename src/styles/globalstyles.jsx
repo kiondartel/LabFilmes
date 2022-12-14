@@ -7,13 +7,22 @@ const Global = createGlobalStyle`
   box-sizing: border-box;
  }
 
- html {
-  font-size: medium;
+ body {
+  background-color: #000;
   scroll-behavior: smooth;
   font-family: "Nunito",sans-serif;;
+  color: #fff;
  }
 
+ a{
+  text-decoration: none;
+  color: #f7d354;
+  transition: .5s;
+ }
 
+ a:hover{
+  color: #b8930c;
+ }
 
 
 `;
