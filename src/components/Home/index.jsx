@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import MoviesCard from "../MoviesCard";
 
 import * as Styled from "./styles";
 
@@ -17,7 +18,7 @@ function Home() {
   };
 
   useEffect(() => {
-    const topRatedUrl = `${moviesUrl}top_rated?${apiKey}`;
+    const topRatedUrl = `${moviesUrl}top_rated?${apiKey}&language=pt-BR`;
     console.log(topRatedUrl);
     getTopRatedMovies(topRatedUrl);
   }, []);
@@ -28,7 +29,9 @@ function Home() {
       <Styled.MoviesContainer>
         {bestMovies.length === 0 && <p>Loading...</p>}
         {bestMovies.length > 0 &&
-          bestMovies.map((movie) => <p>{movie.stitle}</p>)}
+          bestMovies.map((movie) => (
+            <MoviesCard key={movie.id} movie={movie} />
+          ))}
       </Styled.MoviesContainer>
     </Styled.Container>
   );
