@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Movies from "./components/MoviesCard";
 import Search from "./components/Search";
+
 import Home from "./components/Home";
 import AppLab from "./App/App";
 import Global from "./styles/globalstyles";

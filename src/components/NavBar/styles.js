@@ -14,7 +14,7 @@ export const SubTitle = styled.h2`
   gap: 0.5rem;
 `;
 
-export const DivContainer = styled.div`
+export const DivContainer = styled.form`
   display: flex;
   gap: 0.5rem;
 `;
