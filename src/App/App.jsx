@@ -1,17 +1,16 @@
 import { Outlet } from "react-router-dom";
-import App from "../components/AppContent";
+import Home from "../components/Home";
+import App from "../components/Home";
 import NavBar from "../components/NavBar";
 import * as Styled from "./styles";
 
-function Home() {
+function AppLab() {
   return (
     <Styled.Container>
       <NavBar />
-      <Styled.SubTitle>Lab Filmes</Styled.SubTitle>
-      <App />
       <Outlet />
     </Styled.Container>
   );
 }
 
-export default Home;
+export default AppLab;

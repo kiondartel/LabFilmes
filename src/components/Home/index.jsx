@@ -6,7 +6,7 @@ import * as Styled from "./styles";
 const moviesUrl = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 
-function App() {
+function Home() {
   const [bestMovies, setBestMovies] = useState([]);
 
   const getTopRatedMovies = async (url) => {
@@ -23,8 +23,15 @@ function App() {
   }, []);
 
   return (
-    <div>{bestMovies && bestMovies.map((movie) => <p>oi{movie.title}</p>)}</div>
+    <Styled.Container>
+      <Styled.Title>Melhores Filmes:</Styled.Title>
+      <Styled.MoviesContainer>
+        {bestMovies.length === 0 && <p>Loading...</p>}
+        {bestMovies.length > 0 &&
+          bestMovies.map((movie) => <p>{movie.stitle}</p>)}
+      </Styled.MoviesContainer>
+    </Styled.Container>
   );
 }
 
-export default App;
+export default Home;
