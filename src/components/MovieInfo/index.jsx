@@ -32,7 +32,7 @@ function MovieInfo() {
   };
 
   useEffect(() => {
-    const movieURL = `${moviesUrl}${id}?${apiKey}`;
+    const movieURL = `${moviesUrl}${id}?${apiKey}&language=pt-BR`;
     getMovies(movieURL);
   }, []);
 
