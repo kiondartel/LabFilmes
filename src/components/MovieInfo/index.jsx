@@ -41,39 +41,40 @@ function MovieInfo() {
       {movie && (
         <>
           <MoviesCard movie={movie} showLink={false} />
-          <Styled.Description>{movie.tagline}</Styled.Description>
-          <Styled.InfoContainer>
-            <Styled.Title>
-              <BsWallet2 />
-              Orçamento
-            </Styled.Title>
-            <Styled.Description>
-              {formatCurrency(movie.budget)}
-            </Styled.Description>
-          </Styled.InfoContainer>
-          <Styled.InfoContainer>
-            <Styled.Title>
-              <BsGraphUp />
-              Faturamento:
-            </Styled.Title>
-            <Styled.Description>
-              {formatCurrency(movie.revenue)}
-            </Styled.Description>
-          </Styled.InfoContainer>
-          <Styled.InfoContainer>
-            <Styled.Title>
-              <BsHourglassSplit />
-              Duração
-            </Styled.Title>
-            <Styled.Description>{movie.runtime} minutos</Styled.Description>
-          </Styled.InfoContainer>
-          <Styled.DescriptionContainer>
-            <Styled.Title>
-              <BsFileEarmarkTextFill />
-              Descrição:
-            </Styled.Title>
-            <Styled.Description>{movie.overview} minutos</Styled.Description>
-          </Styled.DescriptionContainer>
+          <Styled.Content>
+            <Styled.InfoContainer>
+              <Styled.Title>
+                <BsWallet2 />
+                Orçamento
+              </Styled.Title>
+              <Styled.Description>
+                {formatCurrency(movie.budget)}
+              </Styled.Description>
+            </Styled.InfoContainer>
+            <Styled.InfoContainer>
+              <Styled.Title>
+                <BsGraphUp />
+                Faturamento
+              </Styled.Title>
+              <Styled.Description>
+                {formatCurrency(movie.revenue)}
+              </Styled.Description>
+            </Styled.InfoContainer>
+            <Styled.InfoContainer>
+              <Styled.Title>
+                <BsHourglassSplit />
+                Duração
+              </Styled.Title>
+              <Styled.Description>{movie.runtime} minutos</Styled.Description>
+            </Styled.InfoContainer>
+            <Styled.InfoContainer>
+              <Styled.Title>
+                <BsFileEarmarkTextFill />
+                Descrição
+              </Styled.Title>
+              <Styled.Description>{movie.overview} minutos</Styled.Description>
+            </Styled.InfoContainer>
+          </Styled.Content>
         </>
       )}
     </Styled.Container>
