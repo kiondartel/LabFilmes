@@ -17,6 +17,13 @@ function MovieInfo() {
   const { id } = useParams();
   const [movie, setMovies] = useState(null);
 
+  const formatCurrency = (number) => {
+    return number.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
+  };
+
   const getMovies = async (url) => {
     const res = await fetch(url);
     const data = await res.json();
@@ -40,14 +47,18 @@ function MovieInfo() {
               <BsWallet2 />
               Orçamento
             </Styled.Title>
-            <Styled.Description>{movie.budget}</Styled.Description>
+            <Styled.Description>
+              {formatCurrency(movie.budget)}
+            </Styled.Description>
           </Styled.InfoContainer>
           <Styled.InfoContainer>
             <Styled.Title>
               <BsGraphUp />
               Faturamento:
             </Styled.Title>
-            <Styled.Description>{movie.revenue}</Styled.Description>
+            <Styled.Description>
+              {formatCurrency(movie.revenue)}
+            </Styled.Description>
           </Styled.InfoContainer>
           <Styled.InfoContainer>
             <Styled.Title>
