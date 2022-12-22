@@ -25,6 +25,10 @@ function Home() {
 
   return (
     <Styled.Container>
+      <Styled.Description>
+        Descubra nossa busca pelas informações dos filmes, as notícias e
+        matérias especiais de cinema, os últimos trailers e mais...
+      </Styled.Description>
       <Styled.Title>Melhores Filmes:</Styled.Title>
       <Styled.MoviesContainer>
         {bestMovies.length === 0 && <p>Loading...</p>}

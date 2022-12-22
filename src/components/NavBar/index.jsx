@@ -34,11 +34,8 @@ function NavBar() {
         <Styled.Btn type="submit">
           <BiSearchAlt2 />
         </Styled.Btn>
-      </Styled.DivContainer>
-      <Styled.UserContainer>
         <Styled.User src={user} />
-        <Styled.Name>Gabriel L</Styled.Name>
-      </Styled.UserContainer>
+      </Styled.DivContainer>
     </Styled.Nav>
   );
 }

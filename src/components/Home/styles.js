@@ -16,3 +16,8 @@ export const MoviesContainer = styled.div`
   padding: 2rem;
   margin: 0 auto;
 `;
+
+export const Description = styled.p`
+  background-color: red;
+  text-align: center;
+`;

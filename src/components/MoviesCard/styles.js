@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #111;
+  background-color: #8b0000;
   padding: 1rem;
 
   svg {
