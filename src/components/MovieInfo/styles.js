@@ -10,12 +10,15 @@ export const Container = styled.div`
     color: #f7d354;
     margin-right: 0.5rem;
   }
+
+  img {
+    min-width: 500px;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-
   max-height: 665px;
   justify-content: center;
 `;

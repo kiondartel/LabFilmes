@@ -1,6 +1,6 @@
 import * as Styled from "./styles";
 import { Link, useNavigate } from "react-router-dom";
-
+import user from "../../image/user.jpg";
 import { BiCameraMovie, BiSearchAlt2 } from "react-icons/bi";
 import { useState } from "react";
 
@@ -18,12 +18,12 @@ function NavBar() {
 
   return (
     <Styled.Nav>
-      <Styled.SubTitle>
-        <Link to="/">
+      <Link to="/">
+        <Styled.SubTitle>
           <BiCameraMovie />
           LabFilmes
-        </Link>
-      </Styled.SubTitle>
+        </Styled.SubTitle>
+      </Link>
       <Styled.DivContainer onSubmit={handleSubmit}>
         <Styled.Input
           type="text"
@@ -35,6 +35,10 @@ function NavBar() {
           <BiSearchAlt2 />
         </Styled.Btn>
       </Styled.DivContainer>
+      <Styled.UserContainer>
+        <Styled.User src={user} />
+        <Styled.Name>Gabriel L</Styled.Name>
+      </Styled.UserContainer>
     </Styled.Nav>
   );
 }
