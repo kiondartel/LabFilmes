@@ -9,7 +9,7 @@ This is my app \o/
 
 ## Services Used
 * Github
-* ThemoviedbApi
+* ThemovieDbApi
 
 ## Getting started
   
